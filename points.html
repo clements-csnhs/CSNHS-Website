@@ -1,19 +1,12 @@
 <head>
-	<title>CSNHS</title>
-	<link rel="stylesheet" type="text/css" href="index.css">
+	<title>CSNHS Points</title>
+	<script src = "points.js"></script>
+	<link rel="stylesheet" type="text/css" href="points.css">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
-
 <body>
 	
-	<!--
-	<div class="top-bar">
-		<i class="fas fa-bars" onclick="openSideDrawer()"/>
-		<div>Clements Computer Science National Honor Society</div>
-	</div>
-	-->
-
 	<div class="side-drawer">
 
 		<div class="side-drawer-title">
@@ -41,7 +34,7 @@
 		<hr/>
 
 		<div class="side-drawer-links">
-			<a class="active" href="index.html">
+			<a href="index.html">
 				<i class="fas fa-home"></i>
 				<div>Home</div>
 			</a>
@@ -49,7 +42,7 @@
 				<i class="fas fa-hands-helping"></i>
 				<div>Volunteer</div>
 			</a>
-			<a href="points.html">
+			<a class="active" href="points.html">
 				<i class="fas fa-tasks"></i>
 				<div>Points</div>
 			</a>
@@ -57,38 +50,31 @@
 				<i class="fas fa-question-circle"></i>
 				<div>FAQ</div>
 			</a>
-
-
 		</div>
-	</div>
 
+	</div>
 
 	<div class="main">
 
-		<div class="splash-picture">
-			<h1>Welcome to</h1>
-			<div>Clements Computer Science</div>
-			<div>National Honor Society</div>	
-		</div>
+		<div class="point-query-background">
+			<h4>CSNHS Points Query</h4>
+			<div class="point-query-foreground">
+				
+				<div class="point-query-info">
+					Enter your information to query points.
+				</div>
 
-		<div class="about-csnhs">
-			<h1>About</h1>
-			<div class="about-csnhs-info">
+				<div class="point-query-login">
+					<input autofocus type="text" id="point-query-fname" placeholder="First Name">
+					<input type="text" id="point-query-lname" placeholder="Last Name">
+					<input type="number" id="point-query-sid" placeholder="Student ID">
+					<button onclick="">Submit</button>
+				</div>
+
 			</div>
-		</div>
 
-		<div class="announcements-background"></div>
-		<div class="announcements-foreground">
-			<u>Announcements</u>
-			<ul>
-				<li>11/9/2020 - Introductory Meeting</li>
-				<li>Officer Elections have ended</li>
-				<li>Check Facebook for Official CSNHS Sign Up Form</li>
-				<li>Pay 5$ Dues</li>
-			</ul>
 		</div>
 
 	</div>
-
 
 </body>

@@ -1,0 +1,129 @@
+body, html{
+	width: 100%;
+	font-family: 'Montserrat','Roboto', Charcoal, sans-serif;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+.top-bar{
+	width: 100%;
+	height: 40px;
+	font-size: 24px;
+	background-color: #05077a;
+	color: white;
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	padding-left: 10px;
+}
+.top-bar i{
+	cursor: pointer;
+}
+.top-bar div{
+	margin-left: 20px;
+}
+
+.side-drawer{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 200px;
+	background-color: #030482;
+	border-radius: 1px;
+	color: white;
+	padding: 10px;
+}
+.side-drawer-title-row{
+	height: 50px;
+	padding: 0px;
+
+	display: flex;
+	flex-flow: row;
+}
+.side-drawer-title-row h5{
+	padding-right: 5px;
+}
+.side-drawer-links{
+	padding-left: 0px;
+	font-size: 18px;
+}
+.side-drawer-links a{
+	display: block;
+	padding: 10px 0px;
+	margin-bottom: 5px;
+	text-decoration: none;
+	list-style: none;
+	display: flex;
+	flex-flow: row;
+	border-radius: 10px;
+	cursor: pointer;
+	color: white;
+}
+.side-drawer-links a:hover{
+	background-color: #04054d;
+	margin-left: 5px;
+}
+.side-drawer-links .active{
+	background-color: #0244b0;
+}
+.side-drawer-links i{
+	margin: 0px 10px;
+}
+
+
+.main {
+	position: absolute;
+	top: 0px;
+	left: 220px;
+	width: calc(100% - 220px);
+}
+.splash-picture{
+	width: 100%;
+	height: 400px;
+	background-color: cyan;
+}
+.splash-picture h1{
+	margin: 0px;
+	padding-top: 80px;
+	padding-left: 120px;
+}
+.splash-picture div{
+	margin: 10px 120px;
+	font-size: 48px;
+	font-weight: bold;
+}
+
+.announcements-background{
+	position: absolute;
+	right: 100px;
+	top: 40px;
+	width: 400px;
+	height: 400px;
+	background-color: gray;
+	opacity: 0.4;
+}
+.announcements-foreground{
+	position: absolute;
+	right: 110px;
+	top: 50px;
+	width: 380px;
+	height: 380px;
+}
+.announcements-foreground u{
+	font-size: 20px;
+}
+.announcements-foreground li{
+	padding-bottom: 10px;
+}
+
+.about-csnhs{
+	width: calc(100% - 80px);
+	height: 600px;
+	padding: 20px 40px;
+}
+.about-csnhs-info{
+	width: 100%;
+	height: 100%;
+	background-color: red;
+}
