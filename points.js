@@ -1,8 +1,8 @@
 
 function queryPoints(){
-	var fname = document.getElementById("point-query-fname").value.toUpperCase();
-    var lname = document.getElementById("point-query-lname").value.toUpperCase();
-    var sid = document.getElementById("point-query-sid").value.toUpperCase();
+	//var fname = document.getElementById("point-query-fname").value.toUpperCase();
+    //var lname = document.getElementById("point-query-lname").value.toUpperCase();
+    var sid = document.getElementById("point-query-sid").value;
 
 	var xml = new XMLHttpRequest();
     var result = null;
@@ -13,4 +13,10 @@ function queryPoints(){
     }
     console.log(result);
 
+    var user;
+    for(var temp in result)
+    	if(temp.id=sid)
+    		user=temp;
+
+    document.getElementById("point-query-info").innerHTML = "Member: "+user["name"]+"\nPoints: "+user["points"];	
 }
