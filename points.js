@@ -3,6 +3,8 @@ function queryPoints(){
 	//var fname = document.getElementById("point-query-fname").value.toUpperCase();
     //var lname = document.getElementById("point-query-lname").value.toUpperCase();
     var sid = document.getElementById("point-query-sid").value;
+    if(sid=="" || sid==null)
+    	alert("Please fill in all fields");
 
 	var xml = new XMLHttpRequest();
     var result = null;
@@ -18,5 +20,6 @@ function queryPoints(){
     	if(temp.id=sid)
     		user=temp;
 
-    document.getElementById("point-query-info").innerHTML = "Member: "+user["name"]+"\nPoints: "+user["points"];	
+    console.log("Member: "+user["name"]+"\nPoints: "+user["points"])
+    document.getElementById("point-query-info").innerHTML = "Member: "+user["name"]+"\nPoints: "+user["points"];
 }
