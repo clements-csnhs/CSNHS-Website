@@ -3,6 +3,7 @@ function queryPoints(){
 	//var fname = document.getElementById("point-query-fname").value.toUpperCase();
     //var lname = document.getElementById("point-query-lname").value.toUpperCase();
     var sid = document.getElementById("point-query-sid").value;
+    console.log(sid);
     if(sid=="" || sid==null)
     	alert("Please fill in all fields");
 
@@ -17,7 +18,7 @@ function queryPoints(){
 
     var user;
     for(var temp in result)
-    	if(temp.id=sid)
+    	if(temp["id"]==sid)
     		user=temp;
 
     console.log("Member: "+user["name"]+"\nPoints: "+user["points"])
