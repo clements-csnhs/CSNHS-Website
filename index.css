@@ -5,52 +5,35 @@ body, html{
 	box-sizing: border-box;
 }
 
-.top-bar{
-	width: 100%;
-	height: 40px;
-	font-size: 24px;
-	background-color: #05077a;
-	color: white;
-	display: flex;
-	flex-flow: row;
-	align-items: center;
-	padding-left: 10px;
-}
-.top-bar i{
-	cursor: pointer;
-}
-.top-bar div{
-	margin-left: 20px;
-}
-
 .side-drawer{
 	position: fixed;
 	top: 0px;
 	left: 0px;
 	height: 100%;
-	width: 200px;
-	background-color: #030482;
+	width: 9vw;
+	background-color: #020254;
 	border-radius: 1px;
 	color: white;
-	padding: 10px;
+	padding: 1vh 1vw;
 }
 .side-drawer-title-row{
-	height: 50px;
-	padding: 0px;
+	height: 4vh;
+	margin: 0px;
+	font-size: 0.8vw;
 
 	display: flex;
 	flex-flow: row;
 }
 .side-drawer-title-row h5{
-	padding-right: 5px;
+	padding-right: 1vh;
 }
 .side-drawer-links{
 	padding-left: 0px;
-	font-size: 18px;
+	font-size: 2vh;
 }
 .side-drawer-links a{
 	display: block;
-	padding: 10px 0px;
+	padding: 1vh 0px;
 	margin-bottom: 5px;
 	text-decoration: none;
 	list-style: none;
@@ -58,72 +41,85 @@ body, html{
 	flex-flow: row;
 	border-radius: 10px;
 	cursor: pointer;
-	color: white;
+	color: #b3b3b3;
 }
 .side-drawer-links a:hover{
-	background-color: #04054d;
-	margin-left: 5px;
+	margin-left: 0.5vw;
 }
 .side-drawer-links .active{
-	background-color: #0244b0;
+	color: white;
 }
 .side-drawer-links i{
-	margin: 0px 10px;
+	margin: 0px 1vh;
 }
 
 
 .main {
 	position: absolute;
 	top: 0px;
-	left: 220px;
-	width: calc(100% - 220px);
+	left: 11vw;
+	width: calc(100% - 11vw);
 }
 .splash-picture{
 	width: 100%;
-	height: 400px;
+	height: 35vh;
 	background-color: #eee;
 }
 .splash-picture h1{
 	margin: 0px;
-	padding-top: 80px;
-	padding-left: 120px;
+	padding-top: 8vh;
+	padding-left: 6vw;
+	font-size: 3.5vh;
 }
 .splash-picture div{
-	margin: 10px 120px;
-	font-size: 48px;
+	margin: 1vh 6vw;
+	font-size: 3vw;
 	font-weight: bold;
 }
 
 .announcements-background{
 	position: absolute;
-	right: 100px;
-	top: 40px;
-	width: 400px;
-	height: 400px;
+	right: 6vw;
+	top: 3vh;
+	width: 20vw;
+	height: 40vh;
 	background-color: #ddd;
 	opacity: 0.6;
 }
 .announcements-foreground{
 	position: absolute;
-	right: 110px;
-	top: 50px;
-	width: 380px;
-	height: 380px;
+	right: 6vw;
+	top: 4vh;
+	width: 19vw;
+	height: 39vh;
 }
 .announcements-foreground u{
-	font-size: 20px;
+	font-size: 1.5vw;
 }
 .announcements-foreground li{
-	padding-bottom: 10px;
+	padding-bottom: 2vh;
+	font-size: 1vw;
 }
 
 .about-csnhs{
-	width: calc(100% - 80px);
-	height: 600px;
-	padding: 20px 40px;
+	width: 100%;
+	padding: 5vh 0vw;
 }
 .about-csnhs-info{
-	width: 100%;
-	height: 100%;
+	margin: 0 auto;
+	width: 95%;
 	background-color: #eee;
+	padding: 1vh 0vw;
+}
+.about-csnhs-info-item{
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 3vh;
+}
+.about-csnhs-info-item h1{
+	font-size: 1.5vw;
+}
+.about-csnhs-info-item div{
+	font-size: 1.2vw;
 }

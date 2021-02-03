@@ -10,29 +10,30 @@ body, html{
 	top: 0px;
 	left: 0px;
 	height: 100%;
-	width: 200px;
-	background-color: #030482;
+	width: 9vw;
+	background-color: #020254;
 	border-radius: 1px;
 	color: white;
-	padding: 10px;
+	padding: 1vh 1vw;
 }
 .side-drawer-title-row{
-	height: 50px;
-	padding: 0px;
+	height: 4vh;
+	margin: 0px;
+	font-size: 0.8vw;
 
 	display: flex;
 	flex-flow: row;
 }
 .side-drawer-title-row h5{
-	padding-right: 5px;
+	padding-right: 1vh;
 }
 .side-drawer-links{
 	padding-left: 0px;
-	font-size: 18px;
+	font-size: 2vh;
 }
 .side-drawer-links a{
 	display: block;
-	padding: 10px 0px;
+	padding: 1vh 0px;
 	margin-bottom: 5px;
 	text-decoration: none;
 	list-style: none;
@@ -40,24 +41,23 @@ body, html{
 	flex-flow: row;
 	border-radius: 10px;
 	cursor: pointer;
-	color: white;
+	color: #b3b3b3;
 }
 .side-drawer-links a:hover{
-	background-color: #04054d;
-	margin-left: 5px;
+	margin-left: 0.5vw;
 }
 .side-drawer-links .active{
-	background-color: #0244b0;
+	color: white;
 }
 .side-drawer-links i{
-	margin: 0px 10px;
+	margin: 0px 1vh;
 }
 
 .main{
 	position: absolute;
 	top: 0px;
-	left: 220px;
-	width: calc(100% - 220px);
+	left: 11vw;
+	width: calc(100% - 11vw);
 	display: flex;
 	flex-flow: column;
 	align-items: center;

@@ -13,10 +13,7 @@ function queryPoints(){
     if (xml.status==200) {
       result = JSON.parse(xml.responseText);
     }
-    //var result = JSON.parse('[{"id":760481,"name":"Nathan Mustafa","points":5},{"id":123456,"name":"Test User","points":123}]');
-    console.log(result);
-
-    console.log(sid);
+    
     var user;
     for(var i=0; i<result.length; i++)
     	if(result[i]["id"]==sid){
