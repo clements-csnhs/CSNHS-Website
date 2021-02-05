@@ -1,0 +1,79 @@
+body, html{
+	width: 100%;
+	font-family: 'Montserrat','Roboto', Charcoal, sans-serif;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+.side-drawer{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 9vw;
+	background-color: #020254;
+	border-radius: 1px;
+	color: white;
+	padding: 1vh 1vw;
+}
+.side-drawer-title-row{
+	height: 4vh;
+	margin: 0px;
+	font-size: 0.8vw;
+
+	display: flex;
+	flex-flow: row;
+}
+.side-drawer-title-row h5{
+	padding-right: 1vh;
+}
+.side-drawer-links{
+	padding-left: 0px;
+	font-size: 2vh;
+}
+.side-drawer-links a{
+	display: block;
+	padding: 1vh 0px;
+	margin-bottom: 5px;
+	text-decoration: none;
+	list-style: none;
+	display: flex;
+	flex-flow: row;
+	border-radius: 10px;
+	cursor: pointer;
+	color: #b3b3b3;
+}
+.side-drawer-links a:hover{
+	margin-left: 0.5vw;
+}
+.side-drawer-links .active{
+	color: white;
+}
+.side-drawer-links i{
+	margin: 0px 1vh;
+}
+
+.main {
+	position: absolute;
+	top: 0px;
+	left: 11vw;
+	width: calc(100% - 15vw);
+	height: calc(100% - 8vh);
+	padding: 4vh 2vw;
+	font-size: 2vw;
+	background-color: #fafafa;
+}
+.main div{
+	font-size: 1vw;
+	margin: 0.5vh 0vw;
+}
+.volunteer-list{
+	text-align: center;
+	font-size: 5px;
+	color: #828282;
+	font-style: italic;
+	padding: 2vh 1vw;
+	background-color: white;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
