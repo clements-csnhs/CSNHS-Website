@@ -125,3 +125,8 @@ body, html{
 .about-csnhs-info-item div{
 	font-size: 1.2vw;
 }
+
+.disclaimer{
+	font-size: .6vw;
+	text-align: center;
+}
