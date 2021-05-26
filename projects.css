@@ -63,17 +63,45 @@ body, html{
 	font-size: 2vw;
 	background-color: #fafafa;
 }
-.main div{
+.volunteer-header{
 	font-size: 1vw;
-	margin: 0.5vh 0vw;
+	margin: 0.5vh 0vw;	
 }
+
 .volunteer-list{
-	text-align: center;
-	font-size: 5px;
-	color: #828282;
-	font-style: italic;
+	padding-bottom: 0.5vh;
+}
+.list-item{
 	padding: 2vh 1vw;
+	margin-bottom: 1.5vh;
 	background-color: white;
 	border: 1px solid #ddd;
 	border-radius: 5px;
+	font-size: 1vw;
+}
+.list-item-row{
+	display: flex;
+  	flex-flow: row;
+  	font-size: 0.70vw;
+  	margin-top: 0.5vh;
+}
+.list-item-description{
+	width: 70%;
+}
+.list-item-seperator{
+	width:1px;
+	margin: 0 2.5%;
+	border-right: 1px solid black;
+}
+.list-item-tabs{
+	width: 25%;
+	display:flex;
+	flex-flow: row;
+	flex-wrap: wrap;
+}
+.list-item-tab{
+	border-radius: 10px;
+	padding: 0.3vh 0.5vw;
+	margin: 0.75vh 0.5vw;
+	height: calc(0.70vw + 0.3vh);
 }
